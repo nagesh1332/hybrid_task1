@@ -182,3 +182,5 @@ depends_on = [
 output "ip" {
 
 value =aws_instance.cli.public_ip
+
+}
