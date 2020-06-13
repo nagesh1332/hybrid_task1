@@ -83,9 +83,9 @@ provisioner "remote-exec" {
     inline = [
       "sudo yum install httpd git -y",
       "sudo systemctl start httpd",
-      "sudo systemctl enable httpd",
-      "sudo mkdir /var/www/html",
+      "sudo systemctl enable httpd",   
       "sudo mkfs.ext4  /dev/xvdh",
+      "sudo mkdir /var/www/html",
       "sudo mount  /dev/xvdh  /var/www/html",
       "sudo rm -rf /var/www/html/*",
       "sudo git clone https://github.com/nagesh1332/hybrid_task1.git /var/www/html/",
