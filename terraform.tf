@@ -178,6 +178,7 @@ depends_on = [
 	    command = "start chrome  ${aws_instance.cli.public_ip}"
   	}
 }
+	
 
 output "ip" {
 
